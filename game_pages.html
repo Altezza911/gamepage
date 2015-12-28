@@ -1,0 +1,1594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Game Pages</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="scripts/bootstrap-3.3.5-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="scripts/bootstrap-3.3.5-dist/css/bootstrap-social.css">
+  <link rel="stylesheet" href="fonts/font-awesome-4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="styles/jquery-ui.min.css">
+  <link rel="stylesheet" href="styles/jquery.custom-scrollbar.css">
+  <link rel="stylesheet" href="styles/game_pages.css">
+
+  <!-- <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css"> -->
+  <script src="scripts/jquery-2.1.4.min.js"></script>
+  <script src="scripts/jquery.knob.min.js"></script>
+
+
+
+</head>
+
+<body>
+<header>
+	<nav class="navbar navbar-inverse">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>                        
+	      </button>
+	      <a class="navbar-brand logo" href="#"><img src="img/logo_header.png" alt="logo"></a>
+	    </div>
+	    <div class="collapse navbar-collapse clp" id="myNavbar">
+	      <ul class="nav navbar-nav mainUl">
+	        <li id="firstLi"><a href="#" class="homeAnchor"><i class="fa fa-home"></i><br>HOME</a></li>
+	        <li id="hoverLi"><a href="#">PLATFORMS <span class="caret"></span></a>
+				<table id="child">
+				   	<tr>
+				   		<th class="firstC"></th>
+				   		<th class="2ndC">Playstation</th>
+				   		<th>Xbox</th>
+				   		<th>Nintendo</th>
+				   		<th>Mobile</th>
+				   	</tr>
+
+			   	<tr>
+			   		<td class="firstC"></td>
+			   		<td class="2ndC"><a href="">PS3</a></td>
+			   		<td><a href="">Xbox 360</a></td>
+			   		<td><a href="">Wii U</a></td>
+			   		<td><a href="">Android</a></td>
+			   	</tr>
+
+			   	<tr>
+			   		<td class="firstC"><a href="">PC</a></td>
+			   		<td class="2ndC"><a href="">PS4</a></td>
+			   		<td><a href="">Xbox One</a></td>
+			   		<td><a href="">3ds</a></td>
+			   		<td><a href="">iOS</a></td>
+			   	</tr>
+
+			   	<tr>
+			   		<td class="firstC"></td>
+			   		<td class="2ndC"><a href="">PSVita</a></td>
+			   		<td></td>
+			   		<td></td>
+			   		<td><a href="">Windows</a></td>
+			   	</tr>
+
+			   	<tr id="last-tr">
+			   		<td></td>
+			   		<td></td>
+			   		<td></td>
+			   		<td></td>
+			   		<td></td>
+			   	</tr>
+			   </table>
+	        </li>
+	        <li><a href="#">REVIEWS</a></li>
+	        <li><a href="#">NEWS</a></li>
+	        <li><a href="#">VIDEOS</a></li>
+	        <li><a href="#">FORUMS</a></li>
+	        <li><a href="#">EVENTS</a></li>
+	        <li><a href="#">BUY / SELL</a></li>
+	      </ul>
+	      <ul class="nav navbar-nav navbar-right myRightNav">
+	        <li><a href="#" data-toggle="modal" data-target=".bs-example-modal-lg"><span class="glyphicon glyphicon-search"></span></a></li>
+	        	<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+	  				<div class="modal-dialog modal-lg mod" role="document">
+	    				<div class="modal-content">
+	      					<div class="modal-body searchBody">
+	       						<div class="row">
+								  	<div class="col-lg-12">
+								    	<div class="input-group">
+									      <input type="text" class="form-control inputSearch" placeholder="Search here...">
+									      <span class="input-group-btn">
+									        <button class="btn searchButton" type="button">Search</button>
+									      </span>
+								    	</div><!-- /input-group -->
+						    	      <span class="chk">
+								        <input type="checkbox" aria-label="...">
+								        ALL
+								      </span>
+						    	      <span class="chk">
+								        <input type="checkbox" aria-label="...">
+								        GAMES
+								      </span>
+						    	      <span class="chk">
+								        <input type="checkbox" aria-label="...">
+								        REVIEWS
+								      </span>
+						    	      <span class="chk">
+								        <input type="checkbox" aria-label="...">
+								        NEWS
+								      </span>
+						    	      <span class="chk">
+								        <input type="checkbox" aria-label="...">
+								        VIDEOS
+								      </span>
+						    	      <span class="chk">
+								        <input type="checkbox" aria-label="...">
+								        FORUMS
+								      </span>
+								      <span class="">
+								        <input type="checkbox" aria-label="...">
+								        SHOPS
+								      </span>
+								  	</div><!-- /.col-lg-6 -->
+								</div>
+	      					</div>
+	    				</div>
+	 				</div>
+				</div>
+	        <li><a href="#" data-toggle="modal" data-target="#myModal" data-backdrop="static">SIGN IN / JOIN</a></li>
+	        <div class="modal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content signInContent">
+			            <div class="modal-header">
+				          <button type="button" class="close myCloseBtn" data-dismiss="modal">&times;</button>
+				        </div>
+			      <div class="modal-body modal-body2">
+					<div class="">
+					  <ul class="nav nav-tabs signInNav">
+					    <li class="active"><a data-toggle="tab" href="#signIn">SIGN IN</a></li>
+					    <li><a data-toggle="tab" href="#join">JOIN</a></li>
+					  </ul>
+
+					  <div class="tab-content">
+					    <div id="signIn" class="tab-pane fade in active">
+							<form role="form">
+							    <div class="form-group">
+							      <label for="inputdefault">Username</label>
+							      <input class="form-control" id="inputdefault" type="text">
+							    </div>
+							    <div class="form-group">
+							      <label for="inputdefault">password</label>
+							      <input class="form-control" id="inputdefault" type="text">
+							    </div>
+							</form>
+				    	    <span class="">
+						        <input type="checkbox" aria-label="...">
+						        Remember Me
+						    </span>
+						    <span class="">
+								<button type="button" class="btn btn-default">Sign In</button>
+						    </span>
+						    <div><a href="">Lost your password?</a></div>
+					    </div>
+					    <div id="join" class="tab-pane fade">
+							<form role="form">
+							    <div class="form-group inlineForm half-width-form-control">
+							      <label for="inputdefault">First Name</label>
+							      <input class="form-control" id="inputdefault" type="text">
+							    </div>
+							    <div class="form-group inlineForm half-width-form-control">
+							      <label for="inputdefault">Last Name</label>
+							      <input class="form-control" id="inputdefault" type="text">
+							    </div>
+							    <div class="form-group">
+							      <label for="inputdefault">Username</label>
+							      <input class="form-control" id="inputdefault" type="text">
+							    </div>
+							    <div class="form-group">
+							      <label for="inputdefault">Email</label>
+							      <input class="form-control" id="inputdefault" type="text">
+							    </div>
+							    <div class="form-group">
+							      <label for="inputdefault">Password</label>
+							      <input class="form-control" id="inputdefault" type="text">
+							    </div>
+							    <div class="form-group">
+							      <label for="inputdefault">Re-type Password</label>
+							      <input class="form-control" id="inputdefault" type="text">
+							    </div>
+								<div class="birthday">
+									<label>Birthday</label>
+								    <div id="birthday" class="signInSpan"></div>
+							    	<div class="signInSpan signInButton">
+										<button type="button" class="btn btn-default">Join</button>
+							    	</div>
+								</div>
+								<div class="signUpSocial">
+									<p>You can also join us using social network.</p>
+								</div> 
+							    <a class="btn btn-block btn-social btn-facebook signBtn fb">
+								    <i class="fa fa-facebook"></i> Sign up with Facebook
+								</a>
+								<a class="btn btn-block btn-social btn-twitter signBtn twit">
+								    <i class="fa fa-twitter"></i> Sign up with Twitter
+								</a>
+								<a class="btn btn-social btn-block btn-google signBtn">
+									<i class="fa fa-google-plus"></i>Sign up with Google
+								</a>
+							</form>
+					    </div>
+					  </div>
+					</div>
+			      </div>
+			    </div>
+			  </div>
+			</div> 
+	      </ul>
+	    </div>
+	  </div>
+	</nav>
+</header>
+
+<!-- Wrapper for banner -->
+<section id="game_banner">
+	<div class="banner-image-cont">
+		<img src="img/slider-1.1.jpg" alt="" />
+		<div class="game-slider_overlay-lelms">
+			<h1><hr />Mad Max<hr /></h1>
+			<p class="game-slider_overlay-platform">
+				<a href="#">Pc,</a>
+				&nbsp;
+				<a href="">Xbox</a>
+			</p>
+			<p class="game-slider_overlay-genre">Genre: Action</p>
+			<p class="game-slider_overlay-dev">Developed by: EA Sports</p>
+			<p class="game-slider_overlay-date">Released Date: October 16, 2015</p>
+			<input id="btn-follow" type="button" value="Follow" />
+		</div>
+	</div>
+	<div class="game-slider_overlay"></div>
+</section>
+
+<!-- Main Body Elements-->
+
+<section class="game_submenu-row container">
+	<div class="col-md-9 game_submenu-items">
+		<ul class="game_secondary-menu-tabs nav nav-tabs">
+			<li class="active"><a data-toggle="tab" href="#game_overviews">OVERVIEW</a></li>
+			<li><a data-toggle="tab" href="#game_reviews">REVIEWS</a></li>
+			<li><a data-toggle="tab" href="#game_news-features">NEWS / FEATURES</a></li>
+			<li><a data-toggle="tab" href="#game_images-videos">IMAGES / VIDEOS</a></li>
+			<li><a data-toggle="tab" href="#game_guides">GUIDES</a></li>
+			<li><a data-toggle="tab" href="#game_buy-sell">BUY / SELL</a></li>
+		</ul>
+	</div>
+	<div id="submenu-search" class="col-md-3">
+		<div id="search-icon" class="glyphicon glyphicon-search" aria-hidden="true"></div>
+		<input type="text" class="search-box" placeholder="Search..." />
+	</div>
+</section>
+
+<section class="container mid-body-sect">
+	<div id="news-tabs-cont" class="col-md-9 tab-content">
+			<div id="game_overviews" class="news-cat-cont row tab-pane active">
+				<div class="news-items">
+					<div class="gameDescription">
+						<img src="img/gameBaanner.jpg" alt="gameBaanner" ALIGN="Top" style="float: left;">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia delectus quas voluptate molestias dolor ullam ipsum. Delectus nihil, officiis vel a similique nostrum explicabo totam commodi, autem et, fuga! Aut pariatur earum doloremque id architecto ipsam quas beatae temporibus nisi suscipit voluptatum deserunt veritatis consequatur fugit molestias, cum, quam eius libero sit nemo tempora, perspiciatis quaerat accusantium quidem. Iure eius itaque rerum, velit laudantium. Eveniet nobis, atque omnis autem culpa. Hic laudantium doloribus optio, ab debitis totam temporibus alias, inventore, ipsum exercitationem autem maxime similique nesciunt officiis aspernatur? Omnis suscipit autem minus ad natus laborum mollitia, ea nihil ab sapiente! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ipsam impedit delectus amet. Ipsa, recusandae, labore? Dolorem excepturi, hic saepe perspiciatis voluptatem magni commodi minus, pariatur nisi nobis non magnam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. At reprehenderit similique labore voluptatum dolorem, non dignissimos consectetur et vel id!</p>
+					</div>
+				</div>
+				<div class="progress-container">
+					<div class="circular-progress">
+						<input type="text" value="8" class="one progress-position" data-min="0" data-max="10">
+						<div class="progress-position">
+							<p class="good">GOOD</p>
+							<p>OVERALL RATING</p>
+						</div>
+						<input type="text" value="8" class="dial progress-position" data-min="0" data-max="10">
+						<div class="progress-position">
+							<p class="good">GOOD</p>
+							<p>GAMOPOT RATING</p>
+						</div>
+						<input type="text" value="8" class="dial progress-position" data-min="0" data-max="10">
+						<div class="progress-position progress-position-last">
+							<p class="good">GOOD</p>
+							<p>USER RATING</p>
+							<p>Avg. of 300 user</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id="game_reviews" class="news-cat-cont row tab-pane">
+				<div class="news-items">
+					<div class="gameReviews">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores error exercitationem aperiam qui facilis praesentium perspiciatis, aliquid, maiores natus eveniet, temporibus itaque ex accusantium. Exercitationem blanditiis, neque sint cupiditate ex quas, tenetur, quidem veritatis eveniet consequuntur vero laboriosam sed. Tempora praesentium quaerat, harum magni dicta voluptate a voluptatem quo libero? Praesentium dignissimos, debitis odit tempore eaque voluptates, adipisci eos. Voluptatem nemo quam rerum, quasi rem id architecto veritatis sequi, nisi nam nulla vero, esse deleniti adipisci cumque dolore! Pariatur commodi iusto veritatis at, provident repellat tenetur voluptas saepe facilis dignissimos neque, illo ad illum officiis delectus exercitationem autem? Ex, iure.</p>
+
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam doloremque fugiat harum possimus autem saepe, culpa vel expedita animi corporis, officiis perspiciatis, deserunt et. Accusantium, earum odit eligendi, iusto eos blanditiis ex molestiae, magnam, dolorem cum natus sint esse repudiandae corporis magni deserunt quibusdam. Culpa magni vel possimus, aliquid atque itaque. Voluptate, quisquam labore fugiat, animi quaerat nihil deleniti facere voluptates, amet quo perferendis saepe tempora adipisci doloribus sapiente earum optio recusandae est. Reiciendis nemo ducimus sequi saepe, itaque similique aperiam nam est, provident, consequuntur quia. Obcaecati voluptates magnam quaerat ea quibusdam deserunt laboriosam, maiores recusandae harum eos, veritatis odit.</p>
+
+						<div class="gameReviewsTrailer">
+							<iframe width="778" height="555" src="https://www.youtube.com/embed/ButHzEB8AO4" frameborder="0" allowfullscreen></iframe>
+						</div>
+					</div>
+					<div class="expertReviews">
+						<div class="ratingBarCircular"><p>8.5</p></div>
+						<div class="gamopotReview">
+							<h2>GAMOPOT REVIEW</h2>
+							<p>"Lorem ipsum dolor sit amet, consectetur <br>adipisicing elit. Ducimus, laudantium!"</p>
+						</div>
+						<div class="pos"><p>+</p></div>
+						<div class="advantages">
+							<p>Very good graphics</p>
+							<p>Very good graphics</p>
+							<p>Very good graphics</p>
+							<p>Very good graphics</p>
+							<p>Very good graphics</p>
+						</div>
+						<div class="neg"><p>-</p></div>
+						<div class="drawback">
+							<p>Very good graphics</p>
+							<p>Very good graphics</p>
+							<p>Very good graphics</p>
+							<p>Very good graphics</p>
+							<p>Very good graphics</p>
+						</div>
+					</div>
+				</div>
+
+			    <!-- <input type='hidden' id='current_page_news_1' />
+				<input type='hidden' id='show_per_page_news_1' />
+				<div class="col-md-9 page_navigation_news page_navigation_news_1"></div> -->	<!-- dynamic pagination div -->
+			</div>
+
+			<div id="game_news-features" class="game_cat-cont row tab-pane">
+			    <div class="news-items">
+			    	<div class="news-thumb col-md-4">
+			    		<a href="" ><img src="img/news-thumbs/news-thumb_03.jpg" class="img-responsive" alt="" /></a>
+			    	</div>
+				    <div class="news-list-body col-md-8">
+						<h2><a href="">Star Wars Battlefront Season Pass</a></h2>
+						<div class="news-date">1 month ago</div>
+						<p class="news-excerpt">The Disney Infinity series, too has had games that showcase plenty of contrassts in which a view of reality is modified (possibly even diminished rather that augmented) by a computer reality is modified (possibly even diminished rather that augmented) by a computer..</p>
+			    		<div class="commnt-like-cont">
+			    			<a href=""><span class="fa fa-comment"></a>
+			    			<span>231</span>
+			    			<a href=""><span class="fa fa-thumbs-up"></span></a>
+			    			<span>5,768</span>
+			    		</div>
+				    </div>
+			    </div>
+			    <div class="news-items">
+			    	<div class="news-thumb col-md-4">
+			    		<a href="" ><img src="img/news-thumbs/news-thumb_04.jpg" class="img-responsive" alt="" /></a>
+			    	</div>
+				    <div class="news-list-body col-md-8">
+						<h2><a href="">Rocket League Adds Back to the Future</a></h2>
+						<div class="news-date">2 months ago</div>
+						<p class="news-excerpt">The Disney Infinity series, too has had games that showcase plenty of contrassts in which a view of reality is modified (possibly even diminished rather that augmented) by a computer reality is modified (possibly even diminished rather that augmented) by a computer..</p>
+			    		<div class="commnt-like-cont">
+			    			<a href=""><span class="fa fa-comment"></a>
+			    			<span>231</span>
+			    			<a href=""><span class="fa fa-thumbs-up"></span></a>
+			    			<span>5,768</span>
+			    		</div>
+				    </div>
+			    </div>
+			    <div class="news-items">
+			    	<div class="news-thumb col-md-4">
+			    		<a href="" ><img src="img/news-thumbs/news-thumb_01.jpg" class="img-responsive" alt="" /></a>
+			    	</div>
+				    <div class="news-list-body col-md-8">
+						<h2><a href="">Daredevil Season Teaser Leaks Online</a></h2>
+						<div class="news-date">2 months ago</div>
+						<p class="news-excerpt">The Disney Infinity series, too has had games that showcase plenty of contrassts in which a view of reality is modified (possibly even diminished rather that augmented) by a computer reality is modified (possibly even diminished rather that augmented) by a computer..</p>
+			    		<div class="commnt-like-cont">
+			    			<a href=""><span class="fa fa-comment"></a>
+			    			<span>231</span>
+			    			<a href=""><span class="fa fa-thumbs-up"></span></a>
+			    			<span>5,768</span>
+			    		</div>
+				    </div>
+			    </div>
+				<div class="news-items">
+			    	<div class="news-thumb col-md-4">
+			    		<a href="" ><img src="img/news-thumbs/news-thumb_04.jpg" class="img-responsive" alt="" /></a>
+			    	</div>
+				    <div class="news-list-body col-md-8">
+						<h2><a href="">Rocket League Adds Back to the Future</a></h2>
+						<div class="news-date">2 months ago</div>
+						<p class="news-excerpt">The Disney Infinity series, too has had games that showcase plenty of contrassts in which a view of reality is modified (possibly even diminished rather that augmented) by a computer reality is modified (possibly even diminished rather that augmented) by a computer..</p>
+			    		<div class="commnt-like-cont">
+			    			<a href=""><span class="fa fa-comment"></a>
+			    			<span>231</span>
+			    			<a href=""><span class="fa fa-thumbs-up"></span></a>
+			    			<span>5,768</span>
+			    		</div>
+				    </div>
+			    </div>
+			    <div class="news-items">
+			    	<div class="news-thumb col-md-4">
+			    		<a href="" ><img src="img/news-thumbs/news-thumb_03.jpg" class="img-responsive" alt="" /></a>
+			    	</div>
+				    <div class="news-list-body col-md-8">
+						<h2><a href="">Star Wars Battlefront Season Pass</a></h2>
+						<div class="news-date">1 month ago</div>
+						<p class="news-excerpt">The Disney Infinity series, too has had games that showcase plenty of contrassts in which a view of reality is modified (possibly even diminished rather that augmented) by a computer reality is modified (possibly even diminished rather that augmented) by a computer..</p>
+			    		<div class="commnt-like-cont">
+			    			<a href=""><span class="fa fa-comment"></a>
+			    			<span>231</span>
+			    			<a href=""><span class="fa fa-thumbs-up"></span></a>
+			    			<span>5,768</span>
+			    		</div>
+				    </div>
+			    </div>
+			    <div class="news-items">
+			    	<div class="news-thumb col-md-4">
+			    		<a href="" ><img src="img/news-thumbs/news-thumb_02.jpg" class="img-responsive" alt="" /></a>
+			    	</div>
+				    <div class="news-list-body col-md-8">
+						<h2><a href="">Halo 5 Megabloks Giveaway</a></h2>
+						<div class="news-date">1 month ago</div>
+						<p class="news-excerpt">The Disney Infinity series, too has had games that showcase plenty of contrassts in which a view of reality is modified (possibly even diminished rather that augmented) by a computer reality is modified (possibly even diminished rather that augmented) by a computer..</p>
+			    		<div class="commnt-like-cont">
+			    			<a href=""><span class="fa fa-comment"></a>
+			    			<span>231</span>
+			    			<a href=""><span class="fa fa-thumbs-up"></span></a>
+			    			<span>5,768</span>
+			    		</div>
+				    </div>
+			    </div>
+			    <div class="news-items">
+			    	<div class="news-thumb col-md-4">
+			    		<a href="" ><img src="img/news-thumbs/news-thumb_01.jpg" class="img-responsive" alt="" /></a>
+			    	</div>
+				    <div class="news-list-body col-md-8">
+						<h2><a href="">Daredevil Season Teaser Leaks Online</a></h2>
+						<div class="news-date">2 months ago</div>
+						<p class="news-excerpt">The Disney Infinity series, too has had games that showcase plenty of contrassts in which a view of reality is modified (possibly even diminished rather that augmented) by a computer reality is modified (possibly even diminished rather that augmented) by a computer..</p>
+			    		<div class="commnt-like-cont">
+			    			<a href=""><span class="fa fa-comment"></a>
+			    			<span>231</span>
+			    			<a href=""><span class="fa fa-thumbs-up"></span></a>
+			    			<span>5,768</span>
+			    		</div>
+				    </div>
+			    </div>
+			    <div class="news-items">
+			    	<div class="news-thumb col-md-4">
+			    		<a href="" ><img src="img/news-thumbs/news-thumb_01.jpg" class="img-responsive" alt="" /></a>
+			    	</div>
+				    <div class="news-list-body col-md-8">
+						<h2><a href="">Daredevil Season Teaser Leaks Online</a></h2>
+						<div class="news-date">2 months ago</div>
+						<p class="news-excerpt">The Disney Infinity series, too has had games that showcase plenty of contrassts in which a view of reality is modified (possibly even diminished rather that augmented) by a computer reality is modified (possibly even diminished rather that augmented) by a computer..</p>
+			    		<div class="commnt-like-cont">
+			    			<a href=""><span class="fa fa-comment"></a>
+			    			<span>231</span>
+			    			<a href=""><span class="fa fa-thumbs-up"></span></a>
+			    			<span>5,768</span>
+			    		</div>
+				    </div>
+			    </div>
+			    <div class="news-items">
+			    	<div class="news-thumb col-md-4">
+			    		<a href="" ><img src="img/news-thumbs/news-thumb_02.jpg" class="img-responsive" alt="" /></a>
+			    	</div>
+				    <div class="news-list-body col-md-8">
+						<h2><a href="">Halo 5 Megabloks Giveaway</a></h2>
+						<div class="news-date">1 month ago</div>
+						<p class="news-excerpt">The Disney Infinity series, too has had games that showcase plenty of contrassts in which a view of reality is modified (possibly even diminished rather that augmented) by a computer reality is modified (possibly even diminished rather that augmented) by a computer..</p>
+			    		<div class="commnt-like-cont">
+			    			<a href=""><span class="fa fa-comment"></a>
+			    			<span>231</span>
+			    			<a href=""><span class="fa fa-thumbs-up"></span></a>
+			    			<span>5,768</span>
+			    		</div>
+				    </div>
+			    </div>
+			    <div class="news-items">
+			    	<div class="news-thumb col-md-4">
+			    		<a href="" ><img src="img/news-thumbs/news-thumb_03.jpg" class="img-responsive" alt="" /></a>
+			    	</div>
+				    <div class="news-list-body col-md-8">
+						<h2><a href="">Star Wars Battlefront Season Pass</a></h2>
+						<div class="news-date">1 month ago</div>
+						<p class="news-excerpt">The Disney Infinity series, too has had games that showcase plenty of contrassts in which a view of reality is modified (possibly even diminished rather that augmented) by a computer reality is modified (possibly even diminished rather that augmented) by a computer..</p>
+			    		<div class="commnt-like-cont">
+			    			<a href=""><span class="fa fa-comment"></a>
+			    			<span>231</span>
+			    			<a href=""><span class="fa fa-thumbs-up"></span></a>
+			    			<span>5,768</span>
+			    		</div>
+				    </div>
+			    </div>
+
+				<input type='hidden' id='current_page_game_news_features' />
+				<input type='hidden' id='show_per_page_game_news_features' />
+				<div class="col-md-9 page_navigation_game_news_features page_navigation_game_news_features"></div>	<!-- dynamic pagination div -->
+			</div>
+			
+			<div id="game_images-videos" class="game_cat-cont row tab-pane">
+				<div class="row game_images-sect">
+					<div class="row game_images-sect-header">
+			    		<h4>Images </h4>
+			    		<div></div>
+			    	</div>
+			    
+				    <div class=" row game_imgs-vids-sect-contents">
+				    	<div class="col-md-6 game_images-items">
+				    		<a href="">
+				    			<img src="img/game_pages/images-videos/game_imgs-vids_imgs-002.jpg" alt="game_recomnd-games-thumb" class="img-responsive" />
+				    			<span><i class="fa fa-eye fa-3x"></i></span>
+				    		</a>
+				    	</div>
+				    	<div class="col-md-6 game_images-items">
+				    		<a href="">
+				    			<img src="img/game_pages/images-videos/game_imgs-vids_imgs-004.jpg" alt="game_recomnd-games-thumb" class="img-responsive" />
+				    			<span><i class="fa fa-eye fa-3x"></i></span>
+				    		</a>
+				    	</div>
+				    	<div class="col-md-6 game_images-items">
+				    		<a href="">
+				    			<img src="img/game_pages/images-videos/game_imgs-vids_imgs-004.jpg" alt="game_recomnd-games-thumb" class="img-responsive" />
+				    			<span><i class="fa fa-eye fa-3x"></i></span>
+				    		</a>
+				    	</div>
+				    	<div class="col-md-6 game_images-items">
+				    		<a href="">
+				    			<img src="img/game_pages/images-videos/game_imgs-vids_imgs-002.jpg" alt="game_recomnd-games-thumb" class="img-responsive" />
+				    			<span><i class="fa fa-eye fa-3x"></i></span>
+				    		</a>
+				    	</div>
+				    	<div class="col-md-6 game_images-items">
+				    		<a href="">
+				    			<img src="img/game_pages/images-videos/game_imgs-vids_imgs-004.jpg" alt="game_recomnd-games-thumb" class="img-responsive" />
+				    			<span><i class="fa fa-eye fa-3x"></i></span>
+				    		</a>
+				    	</div>
+				    	<div class="col-md-6 game_images-items">
+				    		<a href="">
+				    			<img src="img/game_pages/images-videos/game_imgs-vids_imgs-002.jpg" alt="game_recomnd-games-thumb" class="img-responsive" />
+				    			<span><i class="fa fa-eye fa-3x"></i></span>
+				    		</a>
+				    	</div>
+				    	<div class="col-md-6 game_images-items">
+				    		<a href="">
+				    			<img src="img/game_pages/images-videos/game_imgs-vids_imgs-002.jpg" alt="game_recomnd-games-thumb" class="img-responsive" />
+				    			<span><i class="fa fa-eye fa-3x"></i></span>
+				    		</a>
+				    	</div>
+				    	<div class="col-md-6 game_images-items">
+				    		<a href="">
+				    			<img src="img/game_pages/images-videos/game_imgs-vids_imgs-004.jpg" alt="game_recomnd-games-thumb" class="img-responsive" />
+				    			<span><i class="fa fa-eye fa-3x"></i></span>
+				    		</a>
+				    	</div>
+				    	<div class="col-md-6 game_images-items">
+				    		<a href="">
+				    			<img src="img/game_pages/images-videos/game_imgs-vids_imgs-004.jpg" alt="game_recomnd-games-thumb" class="img-responsive" />
+				    			<span><i class="fa fa-eye fa-3x"></i></span>
+				    		</a>
+				    	</div>
+				    	<div class="col-md-6 game_images-items">
+				    		<a href="">
+				    			<img src="img/game_pages/images-videos/game_imgs-vids_imgs-002.jpg" alt="game_recomnd-games-thumb" class="img-responsive" />
+				    			<span><i class="fa fa-eye fa-3x"></i></span>
+				    		</a>
+				    	</div>
+				    	<div class="col-md-6 game_images-items">
+				    		<a href="">
+				    			<img src="img/game_pages/images-videos/game_imgs-vids_imgs-002.jpg" alt="game_recomnd-games-thumb" class="img-responsive" />
+				    			<span><i class="fa fa-eye fa-3x"></i></span>
+				    		</a>
+				    	</div>
+
+
+				    	<input type='hidden' id='current_page_game_imgs' />
+						<input type='hidden' id='show_per_page_game_imgs' />
+						<div class="page_navigation_game_imgs row"></div>	<!-- dynamic pagination div -->
+				    </div>
+				</div>
+
+				<div class="row game_videos-sect">
+					<div class="row game_videos-sect-header">
+			    		<h4>Videos </h4>
+			    		<div></div>
+			    	</div>
+				    <div class="row game_imgs-vids-sect-contents">
+				    	<div class="col-md-6 game_videos-items">
+				    		<div class="games_video-thumb">
+					    		<iframe width="360" height="182.781" src="https://www.youtube.com/embed/M2Qsvm_EtkA" frameborder="0" allowfullscreen></iframe>
+					    		<div class="commnt-like-dur-cont">
+					    			<a href=""><span class="fa fa-comment"></a>
+					    			<span>231</span>
+					    			<a href=""><span class="fa fa-thumbs-up"></span></a>
+					    			<span>5,768</span>
+					    			<span class="vid-time-stamp">2:17</span>
+					    		</div>
+					    	</div>
+						    <div class="latest-vids-list-body">
+								<h2><a href="">Inquisition</a></h2>
+								<div class="latest-vids-date">
+									<span> Jan 5,</span>
+									<span> 2015</span>
+								</div>
+								<p class="video-excerpt">The Disney Infinity series, too has had games that showcase plenty of contrassts.</p>
+						    </div>
+				    	</div>
+				    	<div class="col-md-6 game_videos-items">
+					    	<div class="games_video-thumb">
+					    		<iframe width="360" height="182.781" src="https://www.youtube.com/embed/Ist1q9S0z88" frameborder="0" allowfullscreen></iframe>
+					    		<div class="commnt-like-dur-cont">
+					    			<a href=""><span class="fa fa-comment"></span></a>
+					    			<span>231</span>
+					    			<a href=""><span class="fa fa-thumbs-up"></span></a>
+					    			<span>5,768</span>
+					    			<span class="vid-time-stamp">2:17</span>
+					    		</div>
+					    	</div>
+						    <div class="latest-vids-list-body">
+								<h2><a href="">Fast 7</a></h2>
+								<div class="latest-vids-date">
+									<span> July 21,</span>
+									<span> 2015</span>
+								</div>
+								<p class="video-excerpt">The Disney Infinity series, too has had games that showcase plenty of contrassts in which a view of reality is modified (possibly even diminished rather that augmented) by a computer reality is modified (possibly even diminished rather that augmented) by a computer.</p>
+						    </div>
+				    	</div>
+				    	<div class="col-md-6 game_videos-items">
+					    	<div class="games_video-thumb">
+					    		<iframe width="360" height="182.781" src="https://www.youtube.com/embed/Q21bznzy_HY" frameborder="0" allowfullscreen></iframe>
+					    		<div class="commnt-like-dur-cont">
+					    			<a href=""><span class="fa fa-comment"></a>
+					    			<span>231</span>
+					    			<a href=""><span class="fa fa-thumbs-up"></span></a>
+					    			<span>5,768</span>
+					    			<span class="vid-time-stamp">2:17</span>
+					    		</div>
+					    	</div>
+						    <div class="latest-vids-list-body">
+								<h2><a href="">Fifa 15</a></h2>
+								<div class="latest-vids-date">
+									<span> March 4,</span>
+									<span> 2015</span>
+								</div>
+								<p class="video-excerpt">The Disney Infinity series, too has had games that showcase plenty of contrassts in which a view of reality is modified (possibly even diminished rather that augmented) by a computer reality is modified (possibly even diminished rather that augmented) by a computer.</p>
+						    </div>
+				    	</div>
+				    	<div class="col-md-6 game_videos-items">
+					    	<div class="games_video-thumb">
+					    		<iframe width="360" height="182.781" src="https://www.youtube.com/embed/8fpFFd07ZpM" frameborder="0" allowfullscreen></iframe>
+					    		<div class="commnt-like-dur-cont">
+					    			<a href=""><span class="fa fa-comment"></a>
+					    			<span>231</span>
+					    			<a href=""><span class="fa fa-thumbs-up"></span></a>
+					    			<span>5,768</span>
+					    			<span class="vid-time-stamp">2:17</span>
+					    		</div>
+					    	</div>
+						    <div class="latest-vids-list-body">
+								<h2><a href="">Harry Potter</a></h2>
+								<div class="latest-vids-date">
+									<span> Dec 11,</span>
+									<span> 2015</span>
+								</div>
+								<p class="video-excerpt">The Disney Infinity series, too has had games that showcase plenty of contrassts in which a view of reality is modified (possibly even diminished rather that augmented) by a computer reality is modified (possibly even diminished rather that augmented) by a computer.</p>
+						    </div>
+				    	</div>
+				    	<div class="col-md-6 game_videos-items">
+					    	<div class="games_video-thumb">
+					    		<iframe width="360" height="182.781" src="https://www.youtube.com/embed/Q21bznzy_HY" frameborder="0" allowfullscreen></iframe>
+					    		<div class="commnt-like-dur-cont">
+					    			<a href=""><span class="fa fa-comment"></a>
+					    			<span>231</span>
+					    			<a href=""><span class="fa fa-thumbs-up"></span></a>
+					    			<span>5,768</span>
+					    			<span class="vid-time-stamp">2:17</span>
+					    		</div>
+					    	</div>
+						    <div class="latest-vids-list-body">
+								<h2><a href="">Fifa 15</a></h2>
+								<div class="latest-vids-date">
+									<span> March 4,</span>
+									<span> 2015</span>
+								</div>
+								<p class="video-excerpt">The Disney Infinity series, too has had games that showcase plenty of contrassts in which a view of reality is modified (possibly even diminished rather that augmented) by a computer reality is modified (possibly even diminished rather that augmented) by a computer.</p>
+						    </div>
+				    	</div>
+				    	<div class="col-md-6 game_videos-items">
+					    	<div class="games_video-thumb">
+					    		<iframe width="360" height="182.781" src="https://www.youtube.com/embed/Ist1q9S0z88" frameborder="0" allowfullscreen></iframe>
+					    		<div class="commnt-like-dur-cont">
+					    			<a href=""><span class="fa fa-comment"></span></a>
+					    			<span>231</span>
+					    			<a href=""><span class="fa fa-thumbs-up"></span></a>
+					    			<span>5,768</span>
+					    			<span class="vid-time-stamp">2:17</span>
+					    		</div>
+					    	</div>
+						    <div class="latest-vids-list-body">
+								<h2><a href="">Fast 7</a></h2>
+								<div class="latest-vids-date">
+									<span> July 21,</span>
+									<span> 2015</span>
+								</div>
+								<p class="video-excerpt">The Disney Infinity series, too has had games that showcase plenty of contrassts in which a view of reality is modified (possibly even diminished rather that augmented) by a computer reality is modified (possibly even diminished rather that augmented) by a computer.</p>
+						    </div>
+				    	</div>
+				    	<div class="col-md-6 game_videos-items">
+				    		<div class="games_video-thumb">
+					    		<iframe width="360" height="182.781" src="https://www.youtube.com/embed/M2Qsvm_EtkA" frameborder="0" allowfullscreen></iframe>
+					    		<div class="commnt-like-dur-cont">
+					    			<a href=""><span class="fa fa-comment"></a>
+					    			<span>231</span>
+					    			<a href=""><span class="fa fa-thumbs-up"></span></a>
+					    			<span>5,768</span>
+					    			<span class="vid-time-stamp">2:17</span>
+					    		</div>
+					    	</div>
+						    <div class="latest-vids-list-body">
+								<h2><a href="">Inquisition</a></h2>
+								<div class="latest-vids-date">
+									<span> Jan 5,</span>
+									<span> 2015</span>
+								</div>
+								<p class="video-excerpt">The Disney Infinity series, too has had games that showcase plenty of contrassts.</p>
+						    </div>
+				    	</div>
+
+				    	<input type='hidden' id='current_page_game_vids' />
+						<input type='hidden' id='show_per_page_game_vids' />
+						<div class="page_navigation_game_vids row"></div>	<!-- dynamic pagination div -->
+				    </div>
+				</div>
+			</div>
+			
+			<div id="game_guides" class="game_cat-cont row tab-pane">
+				<div class="game_guides-menu-tabs">
+					<ul class="game_guides-menu-items nav nav-tabs">
+						<li class="active col-md-4"><a data-toggle="tab" href="#game_walkthrough">Walkthrough</a></li>
+						<li class="col-md-4"><a data-toggle="tab" href="#game_cheats-n-guides">Cheats & Guides</a></li>
+						<li class="col-md-4"><a data-toggle="tab" href="#game_pc-specification">PC Specification</a></li>
+					</ul>
+				</div>
+				<div class="game_guides-menu-contents tab-content">
+					<div id="game_walkthrough" class="tab-pane active">
+						<p>When starting off in this area, you will be looking for shelter . Work your way on a mountain path and come across a deserted fire. Though After the cut-scene follow the trail and you will come across a body hanging with a bow on it path down to the small stream.</p>
+						<div class="game_guides_embed-vids">
+							<iframe width="650" height="350" src="https://www.youtube.com/embed/PfMFAEoVX1Y" frameborder="0" allowfullscreen></iframe>
+						</div>
+						<p>After that. When you climb up to get the bow wait for the body to swing toward you before grabbing for it. Once you have it you will smack to the ground... again. After you have the bow, there is a Skull (1) hanging from the other end of the tree shoot that to start Ghost Hunter. That's one of the ten totems down.Next, you will have to shoot a deer (Aim for the head not the body). After approaching your kill collect your meat.</p>
+						<div class="guides_walkthrough-maps-cont">
+							<ul id="guides_walkthrough-contents" class="col-md-6">
+								<li class="guides_walkthrough-thumb">
+					    			<a href="" ><img src="img/latest-vids-thumbs/latest-vids-01.jpg" class="img-responsive" alt="" /></a>
+					    		</li>
+				    			<li><a href=""><h3>Walkthrough</h3></a></li>
+				    			<li>Tutorial</li>
+				    			<li>Coastal Forest</li>
+				    			<li>Mountain Temple</li>
+					    	</ul>
+							<ul id="guides_maps-contents" class="col-md-6">
+								<li class="guides_maps-thumb">
+					    			<a href="" ><img src="img/latest-vids-thumbs/latest-vids-02.jpg" class="img-responsive" alt="" /></a>
+					    		</li>
+				    			<li><a href=""><h3>Maps</h3></a></li>
+				    			<li>Tutorial</li>
+				    			<li>Coastal Forest</li>
+				    			<li>Mountain Temple</li>
+							</ul>
+						</div>
+					</div>
+
+					<div id="game_cheats-n-guides" class="tab-pane">
+						<section class="guides_cheats-n-guides-header">
+							<h2 class="guides_cheats-n-guides-header-title">Mad Max
+								&nbsp;<span>Cheats for PC</span>
+							</h2>
+							<div class="guides_cheats-n-guides-options">
+								<select name="" id="guides_platform-dropdown">
+									<option value="all">Xbox 360</option>
+									<option value="pc">PC</option>
+									<option value="">Playstation</option>
+									<option value="xbox">Xbox</option>
+									<option value="nintendo">Nintendo</option>
+									<option value="mobile">Mobile</option>
+									<option value="other">Others</option>
+								</select>
+							</div>
+						</section>
+						<section class="guides_cheats-n-guides-table">
+							<table id="cheats-for_platform" class="table">
+							    <thead>
+							      <tr>
+							        <th>Code</th>
+							        <th>Effect</th>
+							      </tr>
+							    </thead>
+							    <tbody>
+							      <tr>
+							        <td>Incapacitate 25 enemies with dodge counter</td>
+							        <td>Former Adventurer</td>
+							      </tr>
+							      <tr>
+							        <td>Complete all challanges</td>
+							        <td>Inconceivable!</td>
+							      </tr>
+							      <tr>
+							        <td>Complete all conversations with the...</td>
+							        <td>Chatterbox</td>
+							      </tr>
+							      <tr>
+							        <td>Incapacitate 25 enemies with dodge counter</td>
+							        <td>Former Adventurer</td>
+							      </tr>
+							      <tr>
+							        <td>Complete all challanges</td>
+							        <td>Inconceivable!</td>
+							      </tr>
+							      <tr>
+							        <td>Complete all conversations with the...</td>
+							        <td>Chatterbox</td>
+							      </tr>
+							      <tr>
+							        <td>Incapacitate 25 enemies with dodge counter</td>
+							        <td>Former Adventurer</td>
+							      </tr>
+							      <tr>
+							        <td>Complete all challanges</td>
+							        <td>Inconceivable!</td>
+							      </tr>
+							    </tbody>
+							  </table>
+						</section>
+
+						<section class="guides_cheats-n-guides-header">
+							<h2 class="guides_cheats-n-guides-header-title">Mad Max
+								&nbsp;<span>Walkthroughs & FAQ's</span>
+							</h2>
+						</section>
+						<section class="guides_cheats-n-guides-table">
+							<table id="walkthrough-faq-for_platform" class="table">
+							    <thead>
+							      <tr>
+							        <th>Type</th>
+							        <th>Name</th>
+							      </tr>
+							    </thead>
+							    <tbody>
+							      <tr>
+							        <td>FQA/Walkthrough</td>
+							        <td>FAQ/Walkthrough by Shotgunnova</td>
+							      </tr>
+							      <tr>
+							        <td>Trophy Guide</td>
+							        <td>Trophy Guide by Suns ThirdStone</td>
+							      </tr>
+							      <tr>
+							        <td>FQA/Walkthrough</td>
+							        <td>FAQ/Walkthrough by Brokaliv</td>
+							      </tr>
+							      <tr>
+							        <td>FQA/Walkthrough</td>
+							        <td>FAQ/Walkthrough by Krystal109</td>
+							      </tr>
+							      <tr>
+							        <td>FQA/Walkthrough</td>
+							        <td>FAQ/Walkthrough by Absolute Steve</td>
+							      </tr>
+							    </tbody>
+							  </table>
+						</section>
+					</div>
+
+					<div id="game_pc-specification" class="tab-pane">
+						<section class="game_specification-table">
+							<table id="walkthrough-faq-for_platform" class="table table-bordered">
+							    <thead>
+							      <tr>
+							        <th>Device</th>
+							        <th>Minimum Req</th>
+							        <th>GD Adjusted Req</th>
+							        <th>Recommended Req</th>
+							      </tr>
+							    </thead>
+							    <tbody>
+							      <tr>
+							        <td>INTEL CPU</td>
+							        <td>Core i5-650 3.2GHz/td>
+							        <td>Core i5-650 3.2 GHz</td>
+							        <td>Core i5 3.2 GHz</td>
+							      </tr>
+							      <tr>
+							        <td>AMD CPU</td>
+							        <td>Core i5-650 3.2GHz/td>
+							        <td>Core i5-650 3.2 GHz</td>
+							        <td>Core i5 3.2 GHz</td>
+							      </tr>
+							      <tr>
+							        <td>NVIDIA CPU</td>
+							        <td>Core i5-650 3.2GHz/td>
+							        <td>Core i5-650 3.2 GHz</td>
+							        <td>Core i5 3.2 GHz</td>
+							      </tr>
+							      <tr>
+							        <td>AMD CPU</td>
+							        <td>Core i5-650 3.2GHz/td>
+							        <td>Core i5-650 3.2 GHz</td>
+							        <td>Core i5 3.2 GHz</td>
+							      </tr>
+							      <tr>
+							        <td>RAM</td>
+							        <td>Core i5-650 3.2GHz/td>
+							        <td>Core i5-650 3.2 GHz</td>
+							        <td>Core i5 3.2 GHz</td>
+							      </tr>
+							      <tr>
+							        <td>iOS</td>
+							        <td>Core i5-650 3.2GHz/td>
+							        <td>Core i5-650 3.2 GHz</td>
+							        <td>Core i5 3.2 GHz</td>
+							      </tr>
+							      <tr>
+							        <td>DIRECT X</td>
+							        <td>Core i5-650 3.2GHz/td>
+							        <td>Core i5-650 3.2 GHz</td>
+							        <td>Core i5 3.2 GHz</td>
+							      </tr>
+							      <tr>
+							        <td>HDD SPACE</td>
+							        <td>Core i5-650 3.2GHz/td>
+							        <td>Core i5-650 3.2 GHz</td>
+							        <td>Core i5 3.2 GHz</td>
+							      </tr>
+							      <tr>
+							        <td>GD VERDICT</td>
+							        <td>Core i5-650 3.2GHz/td>
+							        <td>Core i5-650 3.2 GHz</td>
+							        <td>Core i5 3.2 GHz</td>
+							      </tr>
+							      <tr>
+							        <td>SOUND</td>
+							        <td>Core i5-650 3.2GHz/td>
+							        <td>Core i5-650 3.2 GHz</td>
+							        <td>Core i5 3.2 GHz</td>
+							      </tr>
+							    </tbody>
+							  </table>
+						</section>
+					</div>
+				</div>
+			</div>
+			
+		  	<div id="game_buy-sell" class="game_cat-cont row tab-pane">
+		  		<div class="row game_buy-sell-header">
+			    		<h4>Buy/Sell </h4>
+			    		<div></div>
+			    </div>
+			    <div id="game_buy-sell_items-cont" class="row">
+					<div class="game_buy-sell-items col-md-4">
+						<a href="">
+							<div class="buy-sell-items-card">
+								<img src="img/buy-sell_thumb.jpg" alt="" class="buy-sell-thumb img-responsive">
+								<p class="buy-sell_item-price">1,200 <span>BDT</span></p>
+								<p class="buy-sell_item-title">Sleeping Dogs</p>
+								<p class="buy-sell_exchange">
+									<span>Exchange</span>
+									<span>with Fifa 15</span>
+								</p>
+							</div>
+						</a>
+					</div>
+					<div class="game_buy-sell-items col-md-4">
+						<a href="">
+							<div class="buy-sell-items-card">
+								<img src="img/buy-sell_thumb.jpg" alt="" class="buy-sell-thumb img-responsive">
+								<p class="buy-sell_item-price">1,200 <span>BDT</span></p>
+								<p class="buy-sell_item-title">Sleeping Dogs</p>
+								<p class="buy-sell_exchange">
+									<span>Exchange</span>
+									<span>with Fifa 15</span>
+								</p>
+							</div>
+						</a>
+					</div>
+					<div class="game_buy-sell-items col-md-4">
+						<a href="">
+							<div class="buy-sell-items-card">
+								<img src="img/buy-sell_thumb.jpg" alt="" class="buy-sell-thumb img-responsive">
+								<p class="buy-sell_item-price">1,200 <span>BDT</span></p>
+								<p class="buy-sell_item-title">Sleeping Dogs</p>
+								<p class="buy-sell_exchange">
+									<span>Exchange</span>
+									<span>with Fifa 15</span>
+								</p>
+							</div>
+						</a>
+					</div>
+					<div class="game_buy-sell-items col-md-4">
+						<a href="">
+							<div class="buy-sell-items-card">
+								<img src="img/buy-sell_thumb.jpg" alt="" class="buy-sell-thumb img-responsive">
+								<p class="buy-sell_item-price">1,200 <span>BDT</span></p>
+								<p class="buy-sell_item-title">Sleeping Dogs</p>
+								<p class="buy-sell_exchange">
+									<span>Exchange</span>
+									<span>with Fifa 15</span>
+								</p>
+							</div>
+						</a>
+					</div>
+					<div class="game_buy-sell-items col-md-4">
+						<a href="">
+							<div class="buy-sell-items-card">
+								<img src="img/buy-sell_thumb.jpg" alt="" class="buy-sell-thumb img-responsive">
+								<p class="buy-sell_item-price">1,200 <span>BDT</span></p>
+								<p class="buy-sell_item-title">Sleeping Dogs</p>
+								<p class="buy-sell_exchange">
+									<span>Exchange</span>
+									<span>with Fifa 15</span>
+								</p>
+							</div>
+						</a>
+					</div>
+					<div class="game_buy-sell-items col-md-4">
+						<a href="">
+							<div class="buy-sell-items-card">
+								<img src="img/buy-sell_thumb.jpg" alt="" class="buy-sell-thumb img-responsive">
+								<p class="buy-sell_item-price">1,200 <span>BDT</span></p>
+								<p class="buy-sell_item-title">Sleeping Dogs</p>
+								<p class="buy-sell_exchange">
+									<span>Exchange</span>
+									<span>with Fifa 15</span>
+								</p>
+							</div>
+						</a>
+					</div>
+					<div class="game_buy-sell-items col-md-4">
+						<a href="">
+							<div class="buy-sell-items-card">
+								<img src="img/buy-sell_thumb.jpg" alt="" class="buy-sell-thumb img-responsive">
+								<p class="buy-sell_item-price">1,200 <span>BDT</span></p>
+								<p class="buy-sell_item-title">Sleeping Dogs</p>
+								<p class="buy-sell_exchange">
+									<span>Exchange</span>
+									<span>with Fifa 15</span>
+								</p>
+							</div>
+						</a>
+					</div>
+					<div class="game_buy-sell-items col-md-4">
+						<a href="">
+							<div class="buy-sell-items-card">
+								<img src="img/buy-sell_thumb.jpg" alt="" class="buy-sell-thumb img-responsive">
+								<p class="buy-sell_item-price">1,200 <span>BDT</span></p>
+								<p class="buy-sell_item-title">Sleeping Dogs</p>
+								<p class="buy-sell_exchange">
+									<span>Exchange</span>
+									<span>with Fifa 15</span>
+								</p>
+							</div>
+						</a>
+					</div>
+					<div class="game_buy-sell-items col-md-4">
+						<a href="">
+							<div class="buy-sell-items-card">
+								<img src="img/buy-sell_thumb.jpg" alt="" class="buy-sell-thumb img-responsive">
+								<p class="buy-sell_item-price">1,200 <span>BDT</span></p>
+								<p class="buy-sell_item-title">Sleeping Dogs</p>
+								<p class="buy-sell_exchange">
+									<span>Exchange</span>
+									<span>with Fifa 15</span>
+								</p>
+							</div>
+						</a>
+					</div>
+					<div class="game_buy-sell-items col-md-4">
+						<a href="">
+							<div class="buy-sell-items-card">
+								<img src="img/buy-sell_thumb.jpg" alt="" class="buy-sell-thumb img-responsive">
+								<p class="buy-sell_item-price">1,200 <span>BDT</span></p>
+								<p class="buy-sell_item-title">Sleeping Dogs</p>
+								<p class="buy-sell_exchange">
+									<span>Exchange</span>
+									<span>with Fifa 15</span>
+								</p>
+							</div>
+						</a>
+					</div>
+					<div class="game_buy-sell-items col-md-4">
+						<a href="">
+							<div class="buy-sell-items-card">
+								<img src="img/buy-sell_thumb.jpg" alt="" class="buy-sell-thumb img-responsive">
+								<p class="buy-sell_item-price">1,200 <span>BDT</span></p>
+								<p class="buy-sell_item-title">Sleeping Dogs</p>
+								<p class="buy-sell_exchange">
+									<span>Exchange</span>
+									<span>with Fifa 15</span>
+								</p>
+							</div>
+						</a>
+					</div>
+					<div class="game_buy-sell-items col-md-4">
+						<a href="">
+							<div class="buy-sell-items-card">
+								<img src="img/buy-sell_thumb.jpg" alt="" class="buy-sell-thumb img-responsive">
+								<p class="buy-sell_item-price">1,200 <span>BDT</span></p>
+								<p class="buy-sell_item-title">Sleeping Dogs</p>
+								<p class="buy-sell_exchange">
+									<span>Exchange</span>
+									<span>with Fifa 15</span>
+								</p>
+							</div>
+						</a>
+					</div>
+					<input type='hidden' id='current_page_game_buy_sell' />
+					<input type='hidden' id='show_per_page_game_buy_sell' />
+					<div class="col-md-9 page_navigation_game_buy_sell page_navigation_game_buy_sell"></div>	<!-- dynamic pagination div -->
+				</div>
+		  	</div>
+	</div>
+
+	<aside class="col-md-3 game_aside-sect">
+		<div class="game_advertisement">
+			<h3>Advertisement</h3>
+			<div>
+				<img src="img/game_sponsored-ad.jpg" class="img-responsive">
+				<p class="buy-sell_exchange game_ad-price">1,200 <span>BDT</span></p>
+			</div>
+			<h4>Xbox 360 kinect</h4>
+			<p>Nine months ago, we published a piece about the imminent arrival of two accessories that could change the gaming market.</p>
+		</div>
+
+		<div class="game_aside-overviews">
+			<div class="game_aside-overviews-overlay"></div>
+			<div class="game_aside-rating-overlay"></div>
+			<div class="game_aside-overviews-contents">
+				<div class="game_aside-overviews-title">
+					<h3>Max Max
+						<a href="#">Pc,</a>
+						<a href="#">Playstation</a>
+					</h3>
+				</div>
+				<div class="game_aside-overviews-rating-cont">
+					<h4>Overall Rating</h4>
+					<p class="game_aside-overviews-rating">7.93</p>
+					<p>Good</p>
+				</div>
+				<div class="game_aside-overviews-info">
+					<table>
+						<tr>
+							<td>Relesed Date</td>
+							<td>October 12, 2015</td>
+						</tr>
+						<tr>
+							<td>Genre</td>
+							<td>Sports</td>
+						</tr>
+						<tr>
+							<td>Publisher</td>
+							<td>Electronic Arts</td>
+						</tr>
+						<tr>
+							<td>Developer</td>
+							<td>EA Canada</td>
+						</tr>
+					</table>
+				</div>
+				<div class="game_aside-overviews-rated-cont">
+					<div class="col-md-3 game_aside-overviews-rated-img">
+						<img src="img/game-aside_overview-rated.jpg" class="img-responsive" />
+					</div>
+					<div class="col-md-9 game_aside-overviews-rated-desc">
+						<h4>All Platforms</h4>
+						<p>Blood and Gore, Intense Violence, Nudity, Strong Language, Strong Sexual Content, Use of Alcohol</p>
+					</div>
+				</div>	
+			</div>
+			<img src="img/game-aside_overview-thumb.jpg" class="img-game_aside-overviews" />
+		</div>
+
+		<div class="game_aside-recomnd-games">
+			<div class="game_aside-recomnd-games-header">
+				<div class="game_aside-recomnd-games-header-title">Recommended Games</div>
+				<div class="game_aside-recomnd-games-options">
+					<select name="" id="game_recomnd-games-dropdown">
+						<option value="all">Overall</option>
+						<option value="pc">PC</option>
+						<option value="">Playstation</option>
+						<option value="xbox">Xbox</option>
+						<option value="nintendo">Nintendo</option>
+						<option value="mobile">Mobile</option>
+						<option value="other">Others</option>
+					</select>
+				</div>
+			</div>
+			<div id="game_recomnd-games-list-items-cont" class="row default-skin">
+				<div class="game_recomnd-games-list-items">
+					<div class="game_recomnd-games-list-summary">
+						<div class="game_recomnd-games-thumb">
+							<a href=""><img src="img/top-vids-thumbs/top-vids-thumb_01.jpg" alt="game_recomnd-games-thumb" /></a>
+						</div>
+						<div class="game_recomnd-games-desc">
+							<h3><a href="">Age of Empires</a></h3>
+							<p class="game_recomnd-games-views"><span>1,567</span> <span>Views</span></p>
+							<div class="commnt-like-dur-cont">
+				    			<a href=""><span class="fa fa-comment"></span></a>
+				    			<span>231</span>
+				    			<a href=""><span class="fa fa-thumbs-up"></span></a>
+				    			<span>5,768</span>
+				    		</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="game_recomnd-games-list-items">
+					<div class="game_recomnd-games-list-summary">
+						<div class="game_recomnd-games-thumb">
+							<a href=""><img src="img/top-vids-thumbs/top-vids-thumb_02.jpg" alt="game_recomnd-games-thumb" /></a>
+						</div>
+						<div class="game_recomnd-games-desc">
+							<h3><a href="">Stormrise</a></h3>
+							<p class="game_recomnd-games-views"><span>245</span> <span>Views</span></p>
+							<div class="commnt-like-dur-cont">
+				    			<a href=""><span class="fa fa-comment"></a>
+				    			<span>45</span>
+				    			<a href=""><span class="fa fa-thumbs-up"></span></a>
+				    			<span>154</span>
+				    		</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="game_recomnd-games-list-items">
+					<div class="game_recomnd-games-list-summary">
+						<div class="game_recomnd-games-thumb">
+							<a href=""><img src="img/top-vids-thumbs/top-vids-thumb_03.jpg" alt="game_recomnd-games-thumb" /></a>
+						</div>
+						<div class="game_recomnd-games-desc">
+							<h3><a href="">Flashpoint</a></h3>
+							<p class="game_recomnd-games-views"><span>245</span> <span>Views</span></p>
+							<div class="commnt-like-dur-cont">
+				    			<a href=""><span class="fa fa-comment"></a>
+				    			<span>45</span>
+				    			<a href=""><span class="fa fa-thumbs-up"></span></a>
+				    			<span>154</span>
+				    		</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="game_recomnd-games-list-items">
+					<div class="game_recomnd-games-list-summary">
+						<div class="game_recomnd-games-thumb">
+							<a href=""><img src="img/top-vids-thumbs/top-vids-thumb_04.jpg" alt="game_recomnd-games-thumb" /></a>
+						</div>
+						<div class="game_recomnd-games-desc">
+							<h3><a href="">Riddick</a></h3>
+							<p class="game_recomnd-games-views"><span>245</span> <span>Views</span></p>
+							<div class="commnt-like-dur-cont">
+				    			<a href=""><span class="fa fa-comment"></a>
+				    			<span>45</span>
+				    			<a href=""><span class="fa fa-thumbs-up"></span></a>
+				    			<span>154</span>
+				    		</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="game_recomnd-games-list-items">
+					<div class="game_recomnd-games-list-summary">
+						<div class="game_recomnd-games-thumb">
+							<a href=""><img src="img/top-vids-thumbs/top-vids-thumb_05.jpg" alt="game_recomnd-games-thumb" /></a>
+						</div>
+						<div class="game_recomnd-games-desc">
+							<h3><a href="">X-Man Wolverine</a></h3>
+							<p class="game_recomnd-games-views"><span>245</span> <span>Views</span></p>
+							<div class="commnt-like-dur-cont">
+				    			<a href=""><span class="fa fa-comment"></a>
+				    			<span>45</span>
+				    			<a href=""><span class="fa fa-thumbs-up"></span></a>
+				    			<span>154</span>
+				    		</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="game_recomnd-games-list-items">
+					<div class="game_recomnd-games-list-summary">
+						<div class="game_recomnd-games-thumb">
+							<a href=""><img src="img/top-vids-thumbs/top-vids-thumb_01.jpg" alt="game_recomnd-games-thumb" /></a>
+						</div>
+						<div class="game_recomnd-games-desc">
+							<h3><a href="">Age of Empires</a></h3>
+							<p class="game_recomnd-games-views"><span>1,567</span> <span>Views</span></p>
+							<div class="commnt-like-dur-cont">
+				    			<a href=""><span class="fa fa-comment"></a>
+				    			<span>231</span>
+				    			<a href=""><span class="fa fa-thumbs-up"></span></a>
+				    			<span>5,768</span>
+				    		</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="game_recomnd-games-list-items">
+					<div class="game_recomnd-games-list-summary">
+						<div class="game_recomnd-games-thumb">
+							<a href=""><img src="img/top-vids-thumbs/top-vids-thumb_02.jpg" alt="game_recomnd-games-thumb" /></a>
+						</div>
+						<div class="game_recomnd-games-desc">
+							<h3><a href="">Stormrise</a></h3>
+							<p class="game_recomnd-games-views"><span>245</span> <span>Views</span></p>
+							<div class="commnt-like-dur-cont">
+				    			<a href=""><span class="fa fa-comment"></a>
+				    			<span>45</span>
+				    			<a href=""><span class="fa fa-thumbs-up"></span></a>
+				    			<span>154</span>
+				    		</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="game_recomnd-games-list-items">
+					<div class="game_recomnd-games-list-summary">
+						<div class="game_recomnd-games-thumb">
+							<a href=""><img src="img/top-vids-thumbs/top-vids-thumb_01.jpg" alt="game_recomnd-games-thumb" /></a>
+						</div>
+						<div class="game_recomnd-games-desc">
+							<h3><a href="">Age of Empires</a></h3>
+							<p class="game_recomnd-games-views"><span>1,567</span> <span>Views</span></p>
+							<div class="commnt-like-dur-cont">
+				    			<a href=""><span class="fa fa-comment"></a>
+				    			<span>231</span>
+				    			<a href=""><span class="fa fa-thumbs-up"></span></a>
+				    			<span>5,768</span>
+				    		</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="game_recomnd-games-list-items">
+					<div class="game_recomnd-games-list-summary">
+						<div class="game_recomnd-games-thumb">
+							<a href=""><img src="img/top-vids-thumbs/top-vids-thumb_02.jpg" alt="game_recomnd-games-thumb" /></a>
+						</div>
+						<div class="game_recomnd-games-desc">
+							<h3><a href="">Stormrise</a></h3>
+							<p class="game_recomnd-games-views"><span>245</span> <span>Views</span></p>
+							<div class="commnt-like-dur-cont">
+				    			<a href=""><span class="fa fa-comment"></a>
+				    			<span>45</span>
+				    			<a href=""><span class="fa fa-thumbs-up"></span></a>
+				    			<span>154</span>
+				    		</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="game_recomnd-games-list-items">
+					<div class="game_recomnd-games-list-summary">
+						<div class="game_recomnd-games-thumb">
+							<a href=""><img src="img/top-vids-thumbs/top-vids-thumb_03.jpg" alt="game_recomnd-games-thumb" /></a>
+						</div>
+						<div class="game_recomnd-games-desc">
+							<h3><a href="">Flashpoint</a></h3>
+							<p class="game_recomnd-games-views"><span>245</span> <span>Views</span></p>
+							<div class="commnt-like-dur-cont">
+				    			<a href=""><span class="fa fa-comment"></a>
+				    			<span>45</span>
+				    			<a href=""><span class="fa fa-thumbs-up"></span></a>
+				    			<span>154</span>
+				    		</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="game_recomnd-games-list-items">
+					<div class="game_recomnd-games-list-summary">
+						<div class="game_recomnd-games-thumb">
+							<a href=""><img src="img/top-vids-thumbs/top-vids-thumb_04.jpg" alt="game_recomnd-games-thumb" /></a>
+						</div>
+						<div class="game_recomnd-games-desc">
+							<h3><a href="">Riddick</a></h3>
+							<p class="game_recomnd-games-views"><span>245</span> <span>Views</span></p>
+							<div class="commnt-like-dur-cont">
+				    			<a href=""><span class="fa fa-comment"></a>
+				    			<span>45</span>
+				    			<a href=""><span class="fa fa-thumbs-up"></span></a>
+				    			<span>154</span>
+				    		</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="game_recomnd-games-list-items">
+					<div class="game_recomnd-games-list-summary">
+						<div class="game_recomnd-games-thumb">
+							<a href=""><img src="img/top-vids-thumbs/top-vids-thumb_05.jpg" alt="game_recomnd-games-thumb" /></a>
+						</div>
+						<div class="game_recomnd-games-desc">
+							<h3><a href="">X-Man Wolverine</a></h3>
+							<p class="game_recomnd-games-views"><span>245</span> <span>Views</span></p>
+							<div class="commnt-like-dur-cont">
+				    			<a href=""><span class="fa fa-comment"></a>
+				    			<span>45</span>
+				    			<a href=""><span class="fa fa-thumbs-up"></span></a>
+				    			<span>154</span>
+				    		</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="game_recomnd-games-list-items">
+					<div class="game_recomnd-games-list-summary">
+						<div class="game_recomnd-games-thumb">
+							<a href=""><img src="img/top-vids-thumbs/top-vids-thumb_01.jpg" alt="game_recomnd-games-thumb" /></a>
+						</div>
+						<div class="game_recomnd-games-desc">
+							<h3><a href="">Age of Empires</a></h3>
+							<p class="game_recomnd-games-views"><span>1,567</span> <span>Views</span></p>
+							<div class="commnt-like-dur-cont">
+				    			<a href=""><span class="fa fa-comment"></a>
+				    			<span>231</span>
+				    			<a href=""><span class="fa fa-thumbs-up"></span></a>
+				    			<span>5,768</span>.buy-sell_exchange
+				    		</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="game_recomnd-games-list-items">
+					<div class="game_recomnd-games-list-summary">
+						<div class="game_recomnd-games-thumb">
+							<a href=""><img src="img/top-vids-thumbs/top-vids-thumb_02.jpg" alt="game_recomnd-games-thumb" /></a>
+						</div>
+						<div class="game_recomnd-games-desc">
+							<h3><a href="">Stormrise</a></h3>
+							<p class="game_recomnd-games-views"><span>245</span> <span>Views</span></p>
+							<div class="commnt-like-dur-cont">
+				    			<a href=""><span class="fa fa-comment"></a>
+				    			<span>45</span>
+				    			<a href=""><span class="fa fa-thumbs-up"></span></a>
+				    			<span>154</span>
+				    		</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</aside>
+</section>
+
+
+<footer>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 myFooter">
+						<ul class="firstList">
+							<li>
+								<p><h3>Help</h3></p>
+								<p><a href="">FAQ</a></p>
+								<p><a href="">Guidelines</a></p>
+							</li>
+							<li>
+								<p><h3>Website</h3></p>
+								<p><a href="">About</a></p>
+								<p><a href="">Terms of Use</a></p>
+								<p><a href="">Privacy Statement</a></p>
+							</li>
+							<li>
+								<h3>Contact Us</h3>
+								<p><a href="">Contact</a></p>
+								<p><a href="">Feedback</a></p>
+							</li>
+							<li>
+								<h3>Site Features</h3>
+								<p><a href="">RSS Feed</a></p>
+								<p><a href="">Site Map</a></p>
+							</li>
+							<li>
+								<h3>Communities</h3>
+								<p><a href="">Forum</a></p>
+								<div>
+									<a class="btn btn-social-icon btn-facebook">
+										<i class="fa fa-facebook"></i></a>
+									<a class="btn btn-social-icon btn-google">
+										<i class="fa fa-google-plus"></i></a>
+									<a class="btn btn-social-icon btn-twitter">
+										<i class="fa fa-twitter"></i></a>
+									<a class="btn btn-social-icon btn-google">
+										<i class="fa fa-youtube"></i></a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+		
+		
+				<div class="row">
+					<div class="col-md-12">
+						<ul class="secondList">
+							<li>Gamopot &copy; 2015</li>
+							<li><a href="">About Us</a></li>
+							<li><a href="">Ad Choice</a></li>
+							<li><a href="">Careers</a></li>
+							<li><a href="">Terms of Use</a></li>
+							<li id="footer-newsletter-input">
+								<p>Subscribe to newsletter</p>
+								<form action="">
+									<input type="email" placeholder="Enter email address" />
+									<input type="submit" value="Subscribe" />
+								</form>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+<!-- Scripts -->
+<script>
+    $(function() {
+        $(".dial").knob();
+    });
+</script>
+
+<script>
+    $(".one").knob({
+       'change' : function (v) { console.log(v); }
+     });
+</script>
+
+<script>
+    $('.one').trigger(
+        'configure',
+         {
+            "min":0,
+           	"max":10,
+            "fgColor":"#AF0508",
+            "width":"180",
+            "height":"180",
+            "thickness":".30",
+            "bgColor":"#E8491F"
+        }
+    );
+</script>
+
+<script>
+    $(".dial").knob({
+       'change' : function (v) { console.log(v); }
+     });
+</script>
+
+<script>
+    $('.dial').trigger(
+        'configure',
+         {
+           "min":0,
+           "max":10,
+           "fgColor":"#EC1D27",
+           "width":"130",
+           "height":"130",
+           "bgColor":"#ffffff",
+           "thickness":".15",
+           "bgColor":"#DF8585"
+        }
+    );
+</script>
+
+
+
+  <script src="scripts/jquery_1.11.3.min.js"></script>
+  <script src="scripts/jquery_1.10.1.min.js"></script>
+  <script src="scripts/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+  <script src="scripts/jquery.custom-scrollbar.js"></script>
+  <script src="scripts/jquery-ui.min.js"></script>
+  <script src="scripts/jquery.easing.1.3.js"></script>
+  <script src="scripts/main.js"></script>
+
+</body>
+</html>
